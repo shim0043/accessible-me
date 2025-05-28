@@ -15,17 +15,18 @@
 <body>
   <div class="container">
     <header class="site-header">
+      <a href="#main" class="skip">Skip to main content</a>
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation">
         <ul>
-          <li><a href="#home" aria-label="skip to main-content">Home</a></li>
-          <li><a href="#products" aria-label="skip to owner">Products</a></li>
-          <li><a href="#reservation" aria-label="skip to form">Reservation</a></li>
-          <li><a href="#studio" aria-label="skip to footer">Studio</a></li>
+          <li><a href="" aria-label="skip to home">Home</a></li>
+          <li><a href="" aria-label="skip to product">Products</a></li>
+          <li><a href="" aria-label="skip to reservation">Reservation</a></li>
+          <li><a href="" aria-label="skip to studio">Studio</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content" id="main" role="main">
       <section id="home" aria-label="main-content">
         <div class="banner">
           <img src="https://placecats.com/1200/900" alt="Image of a cat">
@@ -35,7 +36,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
           </div>
         </div>
-        <div class="owner" id="Products">
+        <div class="owner">
           <h2>Meet the owner</h2>
           <ul itemscope itemtype="https://schema.org/Person">
             <li itemprop="name">Name: John Doe</li>
@@ -49,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section" id="reservation">
+      <section class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html" method="get">
           <label for="fullname">Full Name</label>
@@ -64,11 +65,11 @@
           <label for="yourmessage">Your Message</label>
           <textarea id="yourmessage" aria-label="enter message"></textarea>
 
-          <button aria-label="send contact informations" type="submit">Send</button>
+          <button role="button" type="submit">Send</button>
         </form>
       </section>
     </main>
-    <footer class="site-footer" id="studio">
+    <footer class="site-footer" role="contentinfo">
       <p>&copy; 2021 Jam Box Studios</p>
     </footer>
   </div>
